@@ -2,7 +2,7 @@
 
 ### 將Raspberry Pi連線至無線網路
 剛燒入的系統在沒有鍵盤螢幕或實體網路線 (Zero由於沒有RJ45網路孔，故須配合有線網卡使用) 的情況下，若需要經由無線網路連線，可以建立一個檔名為`wpa_supplicant.conf`的檔案放在`boot`的資料夾。當 Raspberry Pi 上電開機時，系統會自動讀取這份檔案，**並覆蓋掉當前無線網路的設定**。系統在讀取完後便會刪除，所以下次讀取SD卡時會找不到這份檔案，因此建議大家備份一份到自己的電腦當中，若日後需要做修改會方便許多。`wpa_supplicant.conf`的範例檔案內容如下：
-```
+```text
 country=TW
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -30,7 +30,7 @@ network={
 
 ### SSH 遠端連線
 Windows 系統的 SSH 連線需要額外安裝軟體，可以使用 [PuTTY](https://www.putty.org/) 或 [MobaXterm](https://mobaxterm.mobatek.net/) 來進行連線。連線需要先知道 Raspberry Pi 的所在 IP 位址，這部分可以藉由路由器或是 IP Scanner 軟體來尋找，假設 IP 為`192.168.0.2`，那麼用命令列 (Command line) 來連線時可以用下列指令：
-```bash=
+```bash
 ssh pi@192.168.0.2     # pi為預設使用者名稱
 ```
 若是第一次連線到該裝置，在輸入後會出現 authenticity 相關的訊息，會出現`Are you sure you want to continue connecting (yes/no)?`的提示，這邊輸入`yes`按下 enter 就好。最後會要求密碼，預設為`raspberry`，輸入完後即可進入系統。

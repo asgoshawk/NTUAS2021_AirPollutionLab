@@ -30,7 +30,7 @@ Raspberry Pi 和 sensor (或其他設備)的溝通主要藉由 GPIO (general-pur
 
 ---
 首先需要下載 Python 3 所需要的套件：
-```bash=
+```bash
 sudo apt update
 sudo apt install python3-pip python3-spidev
 ```
