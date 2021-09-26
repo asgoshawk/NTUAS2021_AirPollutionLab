@@ -8,31 +8,56 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="icon" href="favicon.ico">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
     .content {
       overflow: auto;
     }
   </style>
+
 </head>
 
 <body>
   <div id="app">Please wait...</div>
+
   <script>
     window.$docsify = {
       name: 'Raspberry Pi 教學筆記',
       loadSidebar: true,
-      loadFooter: true
+      loadFooter: true,
+      repo: 'true',
+      // themeColor: "#42b983",
+      darkMode: {
+        dark: {
+          background: "#1c2022",
+          toggleBtnBg: "#34495e",
+          textColor: "#b4b4b4"
+        },
+        light: {
+          background: "white",
+          toggleBtnBg: "#42b983",
+          // textColor: "#234BCC"
+        }
+      },
+      corner: {
+        url: "https://github.com/asgoshawk/NTUAS2021_AirPollutionLab",
+        icon: "github"
+      }
     }
   </script>
+
   <!-- Docsify v4 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
   <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/docsify-corner/dist/docsify-corner.min.js"></script>
+
 
 </body>
 
