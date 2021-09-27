@@ -15,7 +15,10 @@ Raspberry Pi 和 sensor (或其他設備)的溝通主要藉由 GPIO (general-pur
 
 ![](https://i.imgur.com/IpAUbWM.png)
 
+這三種傳輸協定都可以進行資料的傳輸，但傳輸的運作方式不同，以下簡述這三者不同的地方，並以 Master (主設備) 和 Slave (從設備) 分別來代表 Raspberry Pi 及 Sensor：
+
 #### I<sup>2</sup>C (Inter-Integrated Circuit)
+兩設備用資料線 (Serial Data Line, SDA) 及時脈線 (Serial Clock Line, SCL) 來和連線，接線時兩設備的 SDA 互接且 SCL 互接。此協定可以雙向由 Master 傳至 Slave 或是 Slave 傳至 Master，但由於資料線只有一條，因此資料傳輸時在同一時間只能有一個方向的傳輸，稱為半雙工 (Half duplex)。
 
 #### SPI (Serial Peripheral Interface)
 
