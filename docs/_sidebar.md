@@ -5,4 +5,5 @@
   - [系統更新及初始設定](initialization.md)
 
 - 應用開發
-  - [藉由 GPIO 連接 Sensor](gpio_sensor.md)
+  - [GPIO 與傳輸協定](gpio_sensor.md)
+  - [GPIO 程式碼範例](gpio_code.md)
