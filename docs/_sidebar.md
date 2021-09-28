@@ -6,4 +6,4 @@
 
 - 應用開發
   - [GPIO 與傳輸協定](gpio_sensor.md)
-  - [GPIO 程式碼範例](gpio_code.md)
+  - [GPIO 操作範例 (RGB LED)](gpio_rgb.md)
