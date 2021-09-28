@@ -10,6 +10,7 @@ sudo pip3 install RPi.GPIO
 
 ### GPIO 的模式
 若使用 RPi.GPIO 的套件 需要注意 GPIO 模式有分為 **BCM** 及 **BOARD** 模式，使用上需要對應到不同模式的腳位編碼，若不確定自己的腳位編碼，可以看上一頁的腳位定義對照圖，除此之外也可以在命令列輸入：
+
 ```bash
 pinout
 ```
@@ -22,12 +23,14 @@ pinout
 ### RGB LED 的連接
 
 本次實作將用 RGB LED 來連接 GPIO 並利用程式碼來控制所顯示的顏色，接法大致如下所示：
+
 ![](https://i.imgur.com/rOpZGvA.png)
 
 其中 RGB LED 最長的腳即為共(陰/陽)極，若使用的是共陽極 (Common anode) 的版本便該腳便需要接到 3.3V 腳位，反之共陰極 (Common cathode) 的版本就需要接到 GND，而其他三根則需要串聯相同歐姆電阻後連接到 GPIO上。三根腳位由左至右分別代表 Red、Green、Blue 所以要確定這三根所對應到的 GPIO 腳位編號才能控制。 
   
 ### Python 程式碼範例
 範例 Python 程式碼可以藉由下列指令取得：
+
 ```bash
 wget https://raw.githubusercontent.com/asgoshawk/NTUAS2021_AirPollutionLab/gh-pages/example_code/rgb_pwm.py
 ```
