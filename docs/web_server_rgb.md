@@ -2,7 +2,7 @@
 
 ### 基本範例
 
-![](https://flask.palletsprojects.com/en/2.0.x/_images/flask-logo.png)
+![](https://i.imgur.com/0fyvq7G.png)
 
 [Flask](https://flask.palletsprojects.com/en/2.0.x/) 是以 Python 所編寫的輕量級 Web 開發應用框架，另外也有較完整的框架如 [Django](https://www.djangoproject.com/) 等等，適合用於建立大型的網站，不過本次實作目的是透過網路對伺服器發出一個 Request 後，再讓伺服器控制我們的RGB燈泡，故使用這類的框架，而如果想用來建立靜態網頁，Flask 其實也足以應付這類的開發，有興趣可以自行尋找相關教學。在建立伺服器前，首先需要下載 Flask 套件：
 ```
