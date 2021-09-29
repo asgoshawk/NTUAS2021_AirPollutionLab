@@ -22,6 +22,7 @@ pinout
 ### RGB LED 的連接
 
 本次實作將用 RGB LED 來連接 GPIO 並利用程式碼來控制所顯示的顏色，接法大致如下所示：
+
 ![](https://i.imgur.com/rOpZGvA.png)
 
 其中 RGB LED 最長的腳即為共(陰/陽)極，若使用的是共陽極 (Common anode) 的版本便該腳便需要接到 3.3V 腳位，反之共陰極 (Common cathode) 的版本就需要接到 GND，而其他三根則需要串聯相同歐姆電阻後連接到 GPIO上。三根腳位由左至右分別代表 Red、Green、Blue 所以要確定這三根所對應到的 GPIO 腳位編號才能控制。 
@@ -29,6 +30,7 @@ pinout
 ### PWM 簡介
 
 PWM (Pulse Width Modulation) 中文簡稱脈寬調變，是一種利用數位訊號來模擬類比訊號的技術。由於 GPIO 只能輸出數位訊號，也就是只有高和低電位，對於 LED 來說只會有明滅兩種情況。然而 PWM 所做的事情就是輸出一連串的高低電位切換訊號，藉由改變工作週期 (Duty cycle) 模擬不同電壓來調整 LED 的亮度，同樣的方式也被應用在風扇或馬達轉速等等。
+
 ![](https://i.stack.imgur.com/g1C2r.png)
 
 ### Python 程式碼範例
