@@ -97,13 +97,11 @@ def test_led(rainbow = False):
             if color > 767:
                 color = 0
 
-        my_led.close()                  # Turn off the led
-
     except KeyboardInterrupt:
         print("Quit.")
 
     finally:
-        my_led.close()
+        my_led.close()                  # Turn off the led
 
 if __name__ == '__main__':
     test_led(True)
