@@ -8,7 +8,7 @@ def hello():
 
 @app.route("/new")
 def new_route():
-    return "My first new route!"
+    return "My new route!"
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
