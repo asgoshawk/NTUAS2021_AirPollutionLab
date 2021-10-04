@@ -8,3 +8,8 @@
   - [GPIO 與傳輸協定](gpio_sensor.md)
   - [GPIO 操作範例 (RGB LED)](gpio_rgb.md)
   - [建立 Web 伺服器 (Flask)](web_server_rgb.md)
+  - [Ngrok 設定](ngrok_setup.md)
+
+- 實用工具及指令
+  - [Screen](screen.md)
+  - [Crontab](crontab.md)
