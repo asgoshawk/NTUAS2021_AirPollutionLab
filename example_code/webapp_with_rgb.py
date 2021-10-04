@@ -21,27 +21,27 @@ def hello():
 @app.route("/Red")
 def call_Red():
     my_led.setColor(255, 0, 0)      # Red
-    time.sleep(1)
-    my_led.setColor(0, 0, 0)
     return "It's Red!"
 
 @app.route("/Green")
 def call_Green():
     my_led.setColor(0, 255, 0)      # Green
-    time.sleep(1)
-    my_led.setColor(0, 0, 0)
     return "It's Green!"
 
 @app.route("/Blue")
 def call_Blue():
     my_led.setColor(0, 0, 255)      # Blue
-    time.sleep(1)
-    my_led.setColor(0, 0, 0)
     return "It's Blue!"
-    
+
+@app.route("/Close")
+def close_LED():
+    my_led.setColor(0, 0, 0)        # Close
+    return "LED is closed!"    
 
 @app.route("/Demo/<int:times>")
-def demo_RGB(times = 1):
+def demo_RGB():
+    if times < 0:
+        times = 0
     color   =   0
     count   =   0
     while(True and count < times):

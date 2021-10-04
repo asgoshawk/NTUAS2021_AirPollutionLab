@@ -38,3 +38,11 @@ def new_route():
 重新啟動伺服器後，連線至 192.168.0.1:5000/new 時就會顯示 My new route! 這個內容了。
 
 ### 透過伺服器控制 RGB LED
+
+根據上述程式碼，我們可以設定不同路由來執行我們想要的函式，所以將程式碼稍作改寫後，是可以用來控制 RGB LED 的，範例程式碼可以藉由下列指令來下載：
+
+```bash
+wget https://raw.githubusercontent.com/asgoshawk/NTUAS2021_AirPollutionLab/gh-pages/example_code/webapp_with_rgb.py
+```
+
+不過因為有使用到 `rgb_pwm.py` 定義的類別，所以記得要從[這個章節](gpio_rgb.md)的最後來下載 `.py` 檔，並確定這兩個程式碼要在同個目錄裡。載完後就可以執行 `python3 webapp_with_app.py` 並試著連線到不同路由來控制 RGB LED 了。 
