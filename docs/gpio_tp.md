@@ -1,6 +1,6 @@
 ## GPIO 與傳輸協定
 
-Raspberry Pi 和 sensor (或其他設備)的溝通主要藉由 GPIO (general-purpose input/output) 來達成，本章節會介紹如何經由GPIO來和不同傳輸協定的設備連線。
+Raspberry Pi 和 感測器 Sensor (或其他設備) 的溝通主要藉由 GPIO (general-purpose input/output) 來達成，本章節會介紹如何經由GPIO來和不同傳輸協定的設備連線。
 
 ### GPIO 腳位定義
 目前市售的 Raspberry Pi 的 GPIO 大部分都有40個腳位(pin)，所若是使用 Raspberry Pi 3B、3B+、4B 等以類型的版本，其腳位的對應如下圖所示：
