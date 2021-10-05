@@ -38,7 +38,7 @@ sudo i2cdetect -y 1
 
 目前實驗室的空氣盒子使用的氣體感測器本身就是輸出類比訊號，因此會透過 ADS1115 這顆四通道的 IC 來把感測器的訊號作轉換並藉由 I<sup>2</sup>C 來傳遞初始數值給 Raspberry Pi。如上圖所示，A0 - A3 腳位會和感測器的電極連接，其餘腳位 SDA、SCL、GND 及 VDD 則接到 Raspberry Pi 上。要使用 ADC 還需要額外的函式庫 (Library)，在此使用 Adafruit 提供的函式庫：
 
-```
+```bash
 sudo pip3 install adafruit-ads1x15
 
 # 範例 Python 檔
