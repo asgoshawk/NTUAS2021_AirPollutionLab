@@ -7,6 +7,7 @@
 - 應用開發
   - [GPIO 與傳輸協定](gpio_sensor.md)
   - [GPIO 操作範例 (RGB LED)](gpio_rgb.md)
+  - [GPIO 操作範例 (I<sup>2</sup>C)](gpio_i2c.md)
   - [建立 Web 伺服器 (Flask)](web_server_rgb.md)
   - [Ngrok 設定](ngrok_setup.md)
 
