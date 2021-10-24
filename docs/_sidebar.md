@@ -10,6 +10,7 @@
   - [GPIO 操作範例 (I<sup>2</sup>C)](gpio_i2c.md)
   - [建立 Web 伺服器 (Flask)](web_server_rgb.md)
   - [Ngrok 設定](ngrok_setup.md)
+  - [Google Action 設定](google_action.md)
 
 - 實用工具及指令
   - [Screen](screen.md)
