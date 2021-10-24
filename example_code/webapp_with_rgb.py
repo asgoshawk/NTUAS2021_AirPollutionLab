@@ -38,13 +38,10 @@ def close_LED():
     my_led.setColor(0, 0, 0)        # Close
     return "LED is closed!"    
 
-@app.route("/Demo/<int:times>")
+@app.route("/Demo")
 def demo_RGB():
-    if times < 0:
-        times = 0
     color   =   0
-    count   =   0
-    while(True and count < times):
+    for i in range(2):
         if color <= 255:
             R = 255 - color
             G = color
@@ -64,7 +61,7 @@ def demo_RGB():
 
         if color > 767:
             color = 0
-            count += 1
+            
     my_led.setColor(0, 0, 0)
     return "Demo"
 
