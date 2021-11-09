@@ -1,4 +1,4 @@
-## Google Action
+## Google Action 設定
 
 在本篇教學中，我們將會在 Google Cloud Platform 開啟一個專案，接著利用 Google Action 及 DiagFlow 來設定語意及對應的值，接著串接前面設定的 Webhook，設定完後就可以透過 Google Assistant 來控制我們的 Raspberry Pi 了。
 
