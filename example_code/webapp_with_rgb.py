@@ -41,7 +41,7 @@ def close_LED():
 @app.route("/Demo")
 def demo_RGB():
     color   =   0
-    for i in range(2):
+    for i in range(767):
         if color <= 255:
             R = 255 - color
             G = color
