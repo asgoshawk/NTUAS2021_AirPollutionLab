@@ -58,9 +58,6 @@ def demo_RGB():
         my_led.setColor(R, G, B)
         time.sleep(0.005)
         color += 1
-
-        if color > 767:
-            color = 0
             
     my_led.setColor(0, 0, 0)
     return "Demo"
